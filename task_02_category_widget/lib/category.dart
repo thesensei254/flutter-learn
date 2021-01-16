@@ -17,6 +17,7 @@ final _rowHeight = 100.0;
 final _borderRadius = BorderRadius.circular(_rowHeight/2);
 
 class Category extends StatelessWidget {
+  /// instantiate values to be used in custom widget example
   final String name;
   final ColorSwatch color;
   final IconData iconLocation;
@@ -33,7 +34,7 @@ class Category extends StatelessWidget {
     @required this.iconLocation
 }) : assert(name != null),
   assert(color != null),
-  assert(iconLocation != null)
+  assert(iconLocation != null),
   super(key: key);
 
   /// Builds a custom widget that shows [Category] information.
